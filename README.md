@@ -36,6 +36,6 @@ in the `config/bundles.php` file of your project:
 
 return [
     // ...
-    AchivePostman\AchivePostman::class => ['all' => true],
+    AchievePostman\AchievePostman::class => ['all' => true],
 ];
 ```
