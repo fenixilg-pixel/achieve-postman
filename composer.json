@@ -3,8 +3,8 @@
     "version": "0.0.1",
     "description": "Sending templated emails to users upon receiving an achievement.",
     "type": "symfony-bundle",
+    "keywords": ["symfony","symfony-bundle"],
     "license": "MIT",
-    "prefer-stable": true,
     "authors": [
         {
             "name": "Ilgiz Nigamatzyanov",
