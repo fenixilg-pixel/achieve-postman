@@ -1,0 +1,32 @@
+{
+    "name": "fenixilg-pixel/achieve-postman",
+    "version": "0.0.1",
+    "description": "Sending templated emails to users upon receiving an achievement.",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Ilgiz Nigamatzyanov",
+            "email": "fenixilg@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "symfony/framework-bundle": "7.3.*",
+        "symfony/mailer": "7.3.*",
+        "symfony/twig-bundle": "7.3.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "AchievePostman\\": "src/"
+        }
+    },
+    "extra": {
+        "symfony": {
+            "bundle-class": "AchievePostman\\AchievePostman",
+            "require": "7.3.*"
+        }
+    }
+}
