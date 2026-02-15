@@ -4,7 +4,6 @@
     "description": "Sending templated emails to users upon receiving an achievement.",
     "type": "symfony-bundle",
     "license": "MIT",
-    "minimum-stability": "stable",
     "prefer-stable": true,
     "authors": [
         {
