@@ -1,6 +1,6 @@
 <?php
 
-namespace AchievePostman;
+namespace App;
 
 use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
 

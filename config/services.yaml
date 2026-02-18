@@ -1,0 +1,9 @@
+services:
+    AchievePostman\Service\EmailSender:
+        arguments:
+            $mailer: '@mailer'
+            $eventDispatcher: '@event_dispatcher'
+
+    AchievePostman\EventListener\EmailLoggerListener:
+        tags:
+            - { name: kernel.event_listener, event: achieve_postman_email.send, method: onEmailSend }

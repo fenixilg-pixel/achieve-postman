@@ -1,8 +1,8 @@
 {
     "name": "fenixilg-pixel/achieve-postman",
-    "version": "0.0.1",
     "description": "Sending templated emails to users upon receiving an achievement.",
     "type": "symfony-bundle",
+    "version": "v0.0.1",
     "keywords": ["symfony","symfony-bundle"],
     "license": "MIT",
     "authors": [
@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "AchievePostman\\": "src/"
+            "App\\": "src/"
         }
     },
     "extra": {
@@ -27,5 +27,11 @@
             "bundle-class": "AchievePostman\\AchievePostman",
             "require": "7.3.*"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:fenixilg-pixel/achieve-postman.git"
+        }
+    ]
 }

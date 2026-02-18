@@ -1,0 +1,13 @@
+{
+  "recipes": {
+    "fenixilg-pixel/achieve-postman": [
+      "1.0"
+    ]
+  },
+  "branch": "main",
+  "is_contrib": true,
+  "_links": {
+    "repository": "github.com/fenixilg-pixel/achieve-postman",
+    "origin_template": "{package}:{version}@github.com/fenixilg-pixel/achieve-postman:main"
+  }
+}

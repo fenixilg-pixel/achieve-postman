@@ -15,4 +15,4 @@ reload:
 	docker-compose up -d
 
 php:
-	docker exec -it php sh
+	docker exec -it php-b sh

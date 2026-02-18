@@ -23,7 +23,7 @@ Open a command console, enter your project directory and execute the
 following command to download the latest stable version of this bundle:
 
 ```console
-$ composer require otusteamedu/statsd-bundle
+$ composer require fenixilg-pixel/achieve-postman
 ```
 
 ### Step 2: Enable the Bundle
@@ -39,3 +39,22 @@ return [
     AchievePostman\AchievePostman::class => ['all' => true],
 ];
 ```
+
+
+### Step 3: Use in Controller
+
+use AchievePostman\Service\EmailSender;
+
+#[Route('/send-email')]
+public function sendEmail(EmailSender $emailSender): Response
+{
+    $emailSender->send(
+        '@AchievePostmanBundle/email/default.html.twig',
+        ['subject' => 'Привет!', 'message' => 'Это тестовое письмо'],
+        'recipient@example.com',
+        'Тестовая тема',
+        'sender@example.com'
+    );
+
+    return new Response('Письмо отправлено!');
+}

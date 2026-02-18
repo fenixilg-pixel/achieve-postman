@@ -1,0 +1,27 @@
+{
+  "manifests": {
+    "fenixilg-pixel/achieve-postman": {
+      "manifest": {
+        "bundles": {
+          "AchievePostman\\AchievePostman": ["all"]
+        },
+        "copy-from-recipe": {
+          "config/": "%CONFIG_DIR%"
+        },
+        "env": {
+            "ACHIEVE_POSTMAN_EMAIL_FROM_TO": "mymail@mail.ru"
+        }
+      },
+      "files": {
+        "config/packages/achieve_postman.yaml": {
+          "contents": [
+            "achieve_postman:",
+            "  email:",
+            "    from_to: %env(ACHIEVE_POSTMAN_EMAIL_FROM_TO)%"
+          ],
+          "executable": false
+        }
+      }
+    }
+  }
+}
